@@ -1,11 +1,10 @@
 'use strict';
 
-
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
 
-// Can use functions to display massagens.
+// Can use functions to display massagens. - Pode usar funções para mostrar mensagens
 const displayMessage = function(message){
     document.querySelector('.message').textContent = message;
 }
@@ -13,13 +12,13 @@ const displayMessage = function(message){
 document.querySelector('.check').addEventListener('click', function(){
 const guess = Number(document.querySelector('.guess').value);
 
-    //If the guess is NULL
+    //If the guess is NULL - Se a suposição for null
     if(!guess){
         //document.querySelector('.message').textContent = 'No number!'
         // call function to display message
         displayMessage('No number!')
 
-    // if the guess is CORRECT
+    // if the guess is CORRECT - Se a suposição for correta
     } else if(guess === secretNumber){
         //document.querySelector('.message').textContent = 'Correct Number!'
         displayMessage('Correct Number!');
