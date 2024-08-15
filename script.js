@@ -4,7 +4,7 @@ let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
 
-// Can use functions to display massagens. - Pode usar funções para mostrar mensagens
+// Can use functions to display massage - Pode usar funções para mostrar mensagens
 const displayMessage = function(message){
     document.querySelector('.message').textContent = message;
 }
